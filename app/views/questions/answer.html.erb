@@ -1,4 +1,11 @@
-<h1><%= params[:question] %></h1>
-<h2><%= @reply %></h2>
+<div class="box">
+  <p><%= params[:question] %></p>
+  <p><em>-You</em></p>
+</div>
+
+<div class="box" id="reply">
+  <p><strong><%= @reply %></strong></p>
+  <p><em>-Coach</em></p>
+</div>
 
 <%= link_to 'Ask another question here', ask_path %>
